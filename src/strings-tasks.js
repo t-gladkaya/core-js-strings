@@ -316,8 +316,9 @@ function containsSubstring(str, substring) {
  *   countVowels('aEiOu') => 5
  *   countVowels('XYZ') => 1
  */
-function countVowels(/* str */) {
-  throw new Error('Not implemented');
+function countVowels(str) {
+  const matches = str.match(/[aeiouy]/gi);
+  return matches ? matches.length : 0;
 }
 
 /**
